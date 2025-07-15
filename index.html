@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cizise Enterprise - Lumberjack Services</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -66,28 +64,23 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header Section -->
     <header class="bg-white shadow-sm py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <!-- Logo -->
             <div class="flex items-center space-x-2">
-                <!-- Updated logo source with a placeholder and onerror fallback -->
                 <img src="https://placehold.co/100x100/e55b2e/000000?text=Cizise+Logo" alt="Cizise Enterprise Logo" class="h-12 w-12 rounded-full object-cover" onerror="this.onerror=null;this.src='';this.alt='Cizise Enterprise'; this.parentNode.innerHTML='<span class=\'logo-text\'>CIZISE ENTERPRISE</span>';">
                 <div>
                     <span class="logo-text">CIZISE ENTERPRISE</span>
                     <p class="logo-subtext">Precision, Strength and Expertise</p>
                 </div>
             </div>
-            <!-- Navigation (Hidden on small screens, shown on medium and up) -->
             <nav class="hidden md:block">
                 <ul class="flex space-x-6">
                     <li><a href="#" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">Home</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">Services</a></li>
+                    <li><a href="#services" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">Services</a></li>
                     <li><a href="#" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">About Us</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">Contact</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">Contact</a></li>
                 </ul>
             </nav>
-            <!-- Mobile Menu Button (Hamburger icon) -->
             <button class="md:hidden text-gray-600 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -96,9 +89,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero-bg bg-cizise-orange text-white py-20 md:py-32 flex items-center justify-center min-h-[500px] md:min-h-[600px] relative overflow-hidden">
-        <!-- Overlay to make text more readable -->
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
             <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">EXPERIENCE & RELIABLE <br> LUMBERJACK SERVICES</h1>
@@ -107,42 +98,47 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">About Cizise Enterprise</h2>
+            <div class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed space-y-4">
+                <p>Cizise Enterprise is a professional and reliable company specializing in a variety of lumberjack services. We pride ourselves on precision, strength, and expertise, offering a range of tree care and wood-related solutions.</p>
+                <p>We handle tough jobs and are dedicated to providing professional tree care services for safety and beauty, including work with fallen trees, land clearing, and trimming.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24 bg-gray-100">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                <!-- Service Card 1: Tree Removal -->
-                <div class="bg-gray-50 rounded-xl shadow-lg p-6 md:p-8 text-center border-t-4 border-cizise-orange transform hover:scale-105 transition duration-300">
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center border-t-4 border-cizise-orange transform hover:scale-105 transition duration-300">
                     <div class="mb-4">
                         <svg class="w-12 h-12 mx-auto text-cizise-orange icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <h3 class="text-xl md:text-2xl font-semibold mb-3 text-gray-900">TREE REMOVAL</h3>
-                    <p class="text-gray-700">SAFE AND EFFICIENT TREE REMOVAL FOR HOMES AND BUSINESSES.</p>
+                    <p class="text-gray-700">We provide safe and efficient tree removal for both homes and businesses.</p>
                 </div>
 
-                <!-- Service Card 2: Land Clearing -->
-                <div class="bg-gray-50 rounded-xl shadow-lg p-6 md:p-8 text-center border-t-4 border-cizise-orange transform hover:scale-105 transition duration-300">
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center border-t-4 border-cizise-orange transform hover:scale-105 transition duration-300">
                     <div class="mb-4">
                         <svg class="w-12 h-12 mx-auto text-cizise-orange icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <h3 class="text-xl md:text-2xl font-semibold mb-3 text-gray-900">LAND CLEARING</h3>
-                    <p class="text-gray-700">EXPERT LAND CLEARING FOR CONSTRUCTION, AGRICULTURE, AND MORE.</p>
+                    <p class="text-gray-700">We offer expert land clearing services for construction, agriculture, and other needs.</p>
                 </div>
 
-                <!-- Service Card 3: Wood Cutting -->
-                <div class="bg-gray-50 rounded-xl shadow-lg p-6 md:p-8 text-center border-t-4 border-cizise-orange transform hover:scale-105 transition duration-300">
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center border-t-4 border-cizise-orange transform hover:scale-105 transition duration-300">
                     <div class="mb-4">
                         <svg class="w-12 h-12 mx-auto text-cizise-orange icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <h3 class="text-xl md:text-2xl font-semibold mb-3 text-gray-900">WOOD CUTTING</h3>
-                    <p class="text-gray-700">SELLING CUSTOMISE WOOD FOR FIREWOOD OR LANDSCAPING NEEDS.</p>
+                    <p class="text-gray-700">We sell and customize wood for firewood or landscaping needs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action / Contact Info Section -->
     <section id="contact" class="bg-cizise-orange text-white py-12 md:py-16 text-center rounded-t-xl shadow-inner">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">For Inquiries & Quotation</h2>
@@ -152,7 +148,6 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
     <footer class="bg-gray-900 text-gray-300 py-8">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2025 Cizise Enterprise. All rights reserved.</p>
