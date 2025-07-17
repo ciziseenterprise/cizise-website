@@ -57,7 +57,8 @@
         }
         @media (min-width: 768px) {
             .hero-bg {
-                background-image: url('Cizise%20Enterprise%20Photo.jpg'); /* Use actual image on larger screens */
+                /* Assuming 'Cizise Enterprise Photo.jpg' is the correct path for the main banner image */
+                background-image: url('Cizise%20Enterprise%20Photo.jpg');
             }
         }
     </style>
@@ -77,7 +78,21 @@
                 <ul class="flex space-x-6">
                     <li><a href="#" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">Home</a></li>
                     <li><a href="#services" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">Services</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">About Us</a></li>
+                    
+                    <!-- New Dropdown for Company Info -->
+                    <li class="relative group">
+                        <a href="#" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300 flex items-center">
+                            Company
+                            <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-40 z-20">
+                            <li><a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About Us</a></li>
+                            <li><a href="#management" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Management</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="#contact" class="text-gray-600 hover:text-cizise-orange font-medium transition duration-300">Contact</a></li>
                 </ul>
             </nav>
@@ -98,12 +113,44 @@
         </div>
     </section>
 
-    <section class="py-16 md:py-24 bg-white">
+    <section id="about" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">About Cizise Enterprise</h2>
             <div class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed space-y-4">
                 <p>Cizise Enterprise is a professional and reliable company specializing in a variety of lumberjack services. We pride ourselves on precision, strength, and expertise, offering a range of tree care and wood-related solutions.</p>
                 <p>We handle tough jobs and are dedicated to providing professional tree care services for safety and beauty, including work with fallen trees, land clearing, and trimming.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Section -->
+    <section id="management" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Our Management Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
+                <!-- Director 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center border-t-4 border-cizise-orange transform hover:scale-105 transition duration-300">
+                    <div class="mb-4">
+                        <!-- Changed src back to original filename -->
+                        <img src="Director 1.jpg" alt="Lehlogonolo Justice Mukhola" class="w-32 h-32 mx-auto rounded-full object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/128x128/e55b2e/ffffff?text=Director+1';">
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-1 text-gray-900">Lehlogonolo Justice Mukhola</h3>
+                    <p class="text-cizise-orange font-medium">Director</p>
+                    <p class="text-gray-700 mt-2">Bringing vision and strategic leadership to Cizise Enterprise.</p>
+                    <p class="text-gray-700 mt-2"><a href="mailto:mukholaj@live.com" class="text-cizise-orange hover:underline">mukholaj@live.com</a></p>
+                </div>
+
+                <!-- Director 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center border-t-4 border-cizise-orange transform hover:scale-105 transition duration-300">
+                    <div class="mb-4">
+                        <!-- Changed src back to original filename -->
+                        <img src="Director 2.jpg" alt="Selaelo Valentia Mukhola" class="w-32 h-32 mx-auto rounded-full object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/128x128/e55b2e/ffffff?text=Director+2';">
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-1 text-gray-900">Selaelo Valentia Mukhola</h3>
+                    <p class="text-cizise-orange font-medium">Director</p>
+                    <p class="text-gray-700 mt-2">Ensuring operational excellence and client satisfaction.</p>
+                    <p class="text-gray-700 mt-2"><a href="mailto:mukholav@gmail.com" class="text-cizise-orange hover:underline">mukholav@gmail.com</a></p>
+                </div>
             </div>
         </div>
     </section>
